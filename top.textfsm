@@ -1,0 +1,15 @@
+Value PID (\S+)
+Value USER (\S+)
+Value PR (\S+)
+Value NI (\S+)
+Value VIRT (\S+)
+Value RES (\S+)
+Value SHR (\S+)
+Value S (\S+)
+Value CPU (\S+)
+Value MEM (\S+)
+Value TIME (\S+)
+Value COMMAND (\S+)
+
+Start
+  ^${PID}\s+${USER}\s+${PR}\s+${NI}\s+${VIRT}\s+${RES}\s+${SHR}\s+${S}\s+${CPU}\s+${MEM}+${TIME}\s+${COMMAND} -> Record
